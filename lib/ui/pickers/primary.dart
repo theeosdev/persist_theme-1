@@ -41,11 +41,9 @@ class PrimaryColorPicker extends StatelessWidget {
                           context: context,
                           builder: (BuildContext context) => AlertDialog(
                                 title: Text(label),
-                                content: SingleChildScrollView(
-                                  child: CustomColorPicker(
-                                    value: model.primaryColor,
-                                    onChanged: model.changePrimaryColor,
-                                  ),
+                                content: CustomColorPicker(
+                                  value: model.primaryColor,
+                                  onChanged: model.changePrimaryColor,
                                 ),
                               ),
                         );

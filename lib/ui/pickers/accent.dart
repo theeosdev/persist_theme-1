@@ -41,11 +41,9 @@ class AccentColorPicker extends StatelessWidget {
                           context: context,
                           builder: (BuildContext context) => AlertDialog(
                                 title: Text(label),
-                                content: SingleChildScrollView(
-                                  child: CustomColorPicker(
-                                    value: model.accentColor,
-                                    onChanged: model.changeAccentColor,
-                                  ),
+                                content: CustomColorPicker(
+                                  value: model.accentColor,
+                                  onChanged: model.changeAccentColor,
                                 ),
                               ),
                         );
